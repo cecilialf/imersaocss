@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://www.canva.com/pt_br/aprenda/wp-content/uploads/sites/9/2020/04/Fundo-de-Arco-%C3%8Dris-para-Zoom-1.png");
+    background-size: auto 100vh;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: pink;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .site-subtitle,
+  .site-title {
+    text-align: center;
+    color: purple;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
+  
