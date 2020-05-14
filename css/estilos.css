@@ -1,11 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: url("https://www.canva.com/pt_br/aprenda/wp-content/uploads/sites/9/2020/04/Fundo-de-Arco-%C3%8Dris-para-Zoom-1.png");
+    background: #4F4F4F;
     background-size: auto 120vh;
     height: 100vh;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @media (min-width: 400px) {
+    body {
+      font-size: 12px;
+    }
   }
   
+  @media (min-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      font-size: 18px;
+    }
+  }
+header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
   .menu {
-    background-color: pink;
+    background-color: #1C1C1C;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu li {
@@ -16,9 +50,17 @@ body {
     display: flex;
     justify-content: space-around;
   }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+
+  }
+
   a {
-    color: purple;
+    color:white;
     text-decoration: none;
+    font-family: 'Comfortaa', cursive;
   }
   
   a:hover {
@@ -27,10 +69,74 @@ body {
   .site-subtitle,
   .site-title {
     text-align: center;
-    color: purple;
+    color: whitesmoke;
   }
   
+  .site-title {
+    font-size: 3em;
+    font-family: 'Audiowide', cursive;
+    padding-top: 2em;
+  }
   .site-subtitle {
-    font-style: italic;
+    font-family: 'Graduate', cursive;
+    line-height: 1em;
   }
-  
+
+  .contato,
+  .portfolio {
+    padding: 5em;
+    height: 100vh;
+  }
+
+  .contato h2,
+  .portfolio h2 {
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: o.5em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 300px 300px;}
+    .texto {
+      align-content: center;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3), 300px;
+      align-content: center;
+      justify-content: center;
+      height: calc(120vh - 6em - 27px);
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    /* object-fit: contain; */
+    /* object-position: bottom; */
+    /* border-radius: 10px; */
+  }
+
+  .texto {
+    font-family: 'Roboto';
+    color: whitesmoke;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 20em;
+    text-align: justify; */
+    
+  }
